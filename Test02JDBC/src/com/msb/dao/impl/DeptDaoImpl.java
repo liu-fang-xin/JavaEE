@@ -32,7 +32,7 @@ public class DeptDaoImpl implements DeptDao {
                 String dname = resultSet.getString("dname");
                 String loc = resultSet.getString("loc");
                 Dept dept =new Dept(deptno,dname,loc);
-                list.add(dept);
+                list.add(dept) ;
             }
         }catch (Exception e){
             e.printStackTrace();
